@@ -63,7 +63,7 @@
   letter-spacing: 0px;
   text-align: left;
 }
-#listDiv {
+#listBT {
   background-color: #262e38;
   width: 51px;
   height: 51px;
@@ -71,9 +71,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  border: none;
 }
 
-li {
+.listdivClick {
   background-color: 262e38;
   color: #7c8798;
   font-family: Overpass;
@@ -92,22 +93,15 @@ li {
   padding-top: 4% !important;
   padding-bottom: 4% !important;
 }
-#result {
-  background-color: #232a34;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- gap: 30px;
- display: none;
-}
+
 #resultTextDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 15px;
+  margin-top: 30px;
+  
 }
 #resultTextDiv p {
     width: 87%;
@@ -130,6 +124,8 @@ li {
   text-align: left;
 }
 #SelectedDiv{
+   
+    text-align: center;
     background-color: #262E38;
     border-radius: 15px;
     padding-left: 2%;
@@ -137,10 +133,14 @@ li {
     padding: 1%;
     color: #FC7614;
     
+    
 }
 #result{
-    padding: 5%;
-    width: 45%;
+  background-color: #232a34;
+  border-radius: 30px;
+  padding: 5%;
+  width: 45%;
+  display: none;
 }
 #SelectedDiv p {
     font-family: Overpass;
@@ -152,11 +152,22 @@ text-align: center;
 
 }
 
-#listDiv:hover{
-    background-color: #7C8798;
-    li{
-        color: #FFFF;
-    }
+#listBT:hover{
+background-color: #7C8798;
+color: #FFFF;
 }
+#listBT:focus{
+  background-color: #FC7614;
+  color: #FFFF;
+}
+
+#resultImgDiv{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 20vh;
+ margin-top: -60px;
+}
+
 
 
